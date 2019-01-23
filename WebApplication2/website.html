@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+    <div class="title"> OLD WEBSITE DESCRIPTION</div>
+    <style>
+        body {
+            font-family: Calibri;
+        }
+
+
+
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        table#t01 th {
+            background-color: black;
+            color: white;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .p1, .p2, .p3, .p4 {
+            font-weight: bold;
+        }
+    </style>
+    <a href="HomePage.aspx">Home</a> 
+    <br /><br />
+    <div class="link"> Links to the Original Websites:</div>
+    Click <a href="http://www.fanmail.biz/113686.html">here</a> to go to Suzanne's fanmail site. <br />
+    Click <a href="http://www.suzannecollinsbooks.com/">here</a> to go to Suzanne's Official site.
+    <br /><br />
+    I have provided 2 links as Suzzane has two different websites for sending a fanmail and displaying
+    her books. That is one of the main reasons I wanted to fix these pages and <br />
+    incorporate them into one website so her fans don't have any trouble navigating the pages.
+    <br /><br />
+    The website of Suzanne Collins has most of the important elements clustered in one page. The images
+    of the books are not aligned properly and the reviews are put on the side.
+    <br />The users wont be able to focus on one aspect as everything is all over the place.
+    I decided I would fix the pages by having books, contact
+    page and the home in seperate pages. <br>There is a navigation bar but the text is too small and
+    its cramped on the side not making it noticeable.
+
+
+    <br /><br />
+    <h2>Table</h2>
+
+    <table id="t01">
+        <tr>
+            <th>Error</th>
+            <th>Description</th>
+
+        </tr>
+        <tr>
+            <td>
+                From line 129, column 229; to line 129, column 247: div align="right"> <br />
+                From line 131, column 1; to line 131, column 18: div align="left"><br />
+                From line 131, column 336; to line 131, column 354: align="left"> <br />
+                From line 133, column 249; to line 133, column 267: div align="right"> <br />
+                From line 163, column 1; to line 163, column 18: div align="left"> <br />
+
+
+
+            </td>
+            <td>The align attributes on the div element is obsolete.</td>
+
+        </tr>
+        <tr>
+            <td>
+                From line 48, column 66; to line 48, column 73: h:330px;center>Fly Yo <br />
+                From line 90, column 51; to line 90, column 58: h:260px;">center>2013 P <br />
+                From line 154, column 51; to line 154, column 58: h:260px;">center>2013 P <br />
+                From line 195, column 51; to line 195, column 58: h:330px;">center>"...a
+
+            </td>
+            <td>The center element is obsolete. Use CSS instead.</td>
+
+        </tr>
+        <tr>
+            <td>
+                From line 144, column 5; to line 144, column 98
+                div style="max-width: {MAXWIDTH}" class="sb_captioned_image <br />
+                {SMALLIMAGECLASS}" align="center">
+            </td>
+            <td>
+                CSS: max-width: Parse Error. <br />
+                The align attribute on the div element is obsolete. Use CSS instead.
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                table id="theMainTable" cellspacing="0" cellpadding="0" border="0"
+            </td>
+            <td>The cellspacing attribute on the table element is obsolete.</td>
+
+        </tr>
+        <tr>
+            <td>!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"</td>
+            <td>
+                Quirky doctype. Expected !DOCTYPE html
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                From line 256, column 1; to line 256, column 30 : div class="ContentParagraph"><br />
+                From line 233, column 1; to line 233, column 18 : div align="left">"Much <br />
+                From line 226, column 1; to line 226, column 30: div class="ContentParagraph">
+            </td>
+            <td>
+                Unclosed element div.
+            </td>
+
+        </tr>
+
+      
+
+    </table>
+    <br /><br /><br />
+
+    <p class="p1"> JavaScript Elements in the fixed pages: </p>
+    <p>
+        - Horizontal Dot Navigator - Home Page<br />
+        - EventListener alerts - Contact Page
+    </p>
+    <p class="p2"> Jquery Elements in the fixed pages: </p>
+    <p>
+        - .Animate() for the button - Contact Page<br />
+        - .Animate for like/unlike button - Home Page
+    </p>
+    <p class="p3"> Repeater with SQL Data Source </p>
+    <p>
+        - Used to display book info from the database (book.mdf, table:Books) - Book Page<br />
+    </p>
+    <p class="p4"> Model Binding with Entity Framework Model </p>
+    <p>
+        - User fills in the contact form and the information gets saved
+        into the database(book.mdf, table:Comments) - Contact Page<br />
+    </p>
+
+</body>
+</html>

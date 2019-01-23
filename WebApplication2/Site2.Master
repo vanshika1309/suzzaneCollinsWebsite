@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="WebApplication2.Site2" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Suzanne Collins</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div id="title" class="titlehead">
+        <a href="HomePage.aspx">
+            <br />
+            <br />
+            <img src="symbol.png" height="100">
+        </a>
+    </div>
+    <br />
+    <br />
+    <div id="titlehead" class="titlehead">
+        <a href="HomePage.aspx">
+            <h1>SUZANNE COLLINS</h1>
+        </a>
+    </div>
+
+    <br />
+
+    <br />
+
+    <form id="form1" runat="server" class="container">
+        <nav class="nav">
+            <ul id="navbarDropdown" class="nav navbar-nav">
+                <li><a href="HomePage.aspx">HOME</a></li>
+                 <!-- <li><a href="#">AUTHOR</a></li>  -->
+                <li><a href="BookPage.aspx">BOOKS</a></li>
+                <!-- <li><a href="website.html">ORIGINAL</a></li>  -->
+                <li><a href="ContactAuthor.aspx">CONTACT</a></li>
+            </ul>
+        </nav>
+        <br />
+        <br>
+
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+    </form>
+    <footer>
+        <p style="color:white"> &copy: Suzzane Collins 2018</p>
+       
+    </footer>
+
+</body>
+
+</html>
+
+
+

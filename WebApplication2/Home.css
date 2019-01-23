@@ -1,0 +1,109 @@
+﻿body {
+    margin: 0;
+    background-image: url('woods3.jpg');
+    background-size:cover;
+    text-align:center;
+    margin-top:80px;
+}
+
+
+h1{
+    color: white;
+    font-size: 75px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    text-decoration:none;
+}
+
+
+.titlehead a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav{
+    display:inline-block;
+    height:100px;
+    margin-top:1px;
+}
+li {
+    float: left;
+    margin-top: 30px;
+}
+
+ul li a {
+    width: 125px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Calibri;
+    text-decoration: none;margin-top: 30px; 
+    
+}
+
+ul li a:hover{
+    background:rgb(41, 5, 72);
+    transition:0.6s;
+    text-decoration:none;
+    color:white;
+
+}
+
+.transbox {
+    display:inline-block;
+    margin: 20px;
+    background-color:dimgrey;
+    opacity: 0.5;
+    height:450px;
+    width:650px;
+}
+
+.ontop {
+    position: relative;
+    bottom: 14em;
+
+}
+
+.button {
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    width: 95px;
+    border: none;
+    padding: 10px 17px;
+    font-size: 18px;
+    background: #ed2553;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    border: 0.1em solid mediumpurple;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dotmargin {
+    position: relative;
+    bottom: 24em;
+}
+
+.active, .dot:hover {
+    background-color: mediumpurple;
+}
+
+
+input:focus {
+    outline: none /*!important*/;
+}
+
